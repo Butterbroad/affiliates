@@ -1,5 +1,5 @@
 .revshare {
-
+  margin-bottom: 100px;
   // .revshare__stats
 
   &__stats {
@@ -38,8 +38,20 @@
     font-style: italic;
     margin-bottom: 28px;
     color: #000;
+    &.title {
+      text-align: left;
+      max-width: 500px;
+      margin-bottom: 36px;
+    }
   }
 
+  // .revshare__subtitle
+
+  &__subtitle {
+    &.subtitle {
+      text-align: left;
+    }
+  }
   // .revshare__text
 
   &__text {

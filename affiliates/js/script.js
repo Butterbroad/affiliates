@@ -1,3 +1,21 @@
+const questionTrigger = document.querySelectorAll('.tabs__question');
+questionTrigger.forEach(item => {
+  item.addEventListener('click', () => {
+    item.classList.toggle('active');
+  });
+});
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //Slider

@@ -24,6 +24,11 @@
     flex: 0 1 245px;
     max-width: 245px;
     width: 100%;
+    transition: all .3s ease;
+    filter: grayscale(100%);
+    &:hover {
+      filter: grayscale(0);
+    }
     img {
       max-width: 100%;
       display: block;
