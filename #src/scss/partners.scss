@@ -1,11 +1,23 @@
 .partners {
   margin: 107px 0;
+  @media (max-width: 1440px) {
+    margin: 80px 0;
+  }
+  @media (max-width: 940px) {
+    margin: 58px 0;
+  }
+  @media (max-width: 740px) {
+    margin: 62px 0;
+  }
   // .partners__title
 
   &__title {
     margin-bottom: 46px;
     @media (max-width: 1440px) {
       margin-bottom: 42px;
+    }
+    @media (max-width: 940px) {
+      margin-bottom: 35px;
     }
   }
 
@@ -14,6 +26,15 @@
   &__wrapper {
     display: flex;
     justify-content: space-between;
+    @media (max-width: 940px) {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      min-height: 290px;
+    }
+    @media (max-width: 740px) {
+      justify-content: space-between;
+      min-height: 430px;
+    }
   }
 
   // .partners__item
@@ -29,6 +50,12 @@
   @media (max-width: 1440px) {
     max-width: 145px;
   }
+  @media (max-width: 940px) {
+    max-width: 33.3333%;
+  }
+  @media (max-width: 740px) {
+    max-width: 135px;
+  }
 
   // .item-partners__box
 
@@ -38,6 +65,9 @@
     margin-bottom: 11px;
     @media (max-width: 1440px) {
       margin-bottom: 7px;
+    }
+    @media (max-width: 740px) {
+
     }
   }
 
@@ -57,12 +87,16 @@
     font-family: "Gilroy-Heavy", sans-serif;
     color: #fff;
     padding-top: 3px;
+    padding-right: 6px;
     @media (max-width: 1440px) {
-      margin-bottom: 7px;
       font-size: 24.9882px;
-      width: 53px;
+      max-width: 53px;
       height: 40px;
-      padding-right: 6px;
+    }
+    @media (max-width: 740px) {
+      font-size: 23.5881px;
+      max-width: 50px;
+      height: 37px;
     }
   }
 
@@ -92,6 +126,13 @@
         height: 49px;
       }
     }
+    @media (max-width: 740px) {
+      max-width: 100px;
+      img {
+        width: 46px;
+        height: 46px;
+      }
+    }
   }
 
   // .item-partners__text
@@ -103,6 +144,12 @@
     font-family: "Roboto-Regular", sans-serif;
     span {
       display: block;
+    }
+    @media (max-width: 1440px) {
+      font-size: 16px;
+    }
+    @media (max-width: 740px) {
+      font-size: 13.2155px;
     }
   }
 }
