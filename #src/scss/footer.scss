@@ -1,5 +1,7 @@
 .footer {
-
+  .container {
+    position: relative;
+  }
   // .footer__top
 
   &__top {
@@ -13,6 +15,20 @@
     justify-content: space-between;
     align-items: center;
     height: 70px;
+    @media (max-width: 940px) {
+      height: 90px;
+      align-items: flex-start;
+      padding-top: 22px;
+    }
+    @media (max-width: 740px) {
+      align-items: center;
+      padding-top: 0;
+    }
+     @media (max-width: 640px) {
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+    }
   }
 
   // .footer__logo
@@ -32,17 +48,31 @@
         display: block;
       }
     }
+    @media (max-width: 940px) {
+      max-width: 102px;
+    }
+    @media (max-width: 640px) {
+      margin-bottom: 12px;
+    }
   }
 
   // .footer__payments
 
   &__payments {
-
+    @media (max-width: 940px) {
+      position: absolute;
+      bottom: 10px;
+      left: 40px;
+    }
+    @media (max-width: 740px) {
+      display: none;
+    }
   }
 
   // .footer__socials
 
   &__socials {
+
   }
 
   // .footer__bottom
@@ -57,12 +87,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    @media (max-width: 640px) {
+      height: 47px;
+    }
   }
 }
 
 .payments-footer {
   display: flex;
-
+  margin-right: 10px;
   // .payments-footer_gc
 
   &_gc {
@@ -94,6 +128,9 @@
     }
     &:last-child {
       margin-right: 0;
+    }
+    @media (max-width: 940px) {
+      max-width: 51px;
     }
   }
 }

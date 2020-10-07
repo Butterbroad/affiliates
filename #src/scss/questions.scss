@@ -1,7 +1,15 @@
 .questions {
   padding: 110px 0 60px;
   // .questions__title
-
+  @media (max-width: 1439px) {
+    padding: 65px 0 60px;
+  }
+  @media (max-width: 940px) {
+    padding: 58px 0 60px;
+  }
+  @media (max-width: 740px) {
+    padding: 40px 0 35px;
+  }
   &__title {
     
   }
@@ -15,6 +23,12 @@
 
   &__tabs {
     margin-top: 60px;
+    @media (max-width: 940px) {
+      margin-top: 36px;
+    }
+    @media (max-width: 740px) {
+      margin-top: 28px;
+    }
   }
 }
 
@@ -90,6 +104,9 @@
         display: block;
       }
     }
+    @media (max-width: 940px) {
+      font-size: 16px;
+    }
   }
 
   // .tabs__answer
@@ -101,5 +118,12 @@
     padding: 20px 55px 20px;
     font-family: "Roboto-Regular", sans-serif;
     display: none;
+    @media (max-width: 940px) {
+      font-size: 14px;
+      padding: 20px 10px 20px 55px;
+    }
+    @media (max-width: 740px) {
+      padding: 20px 10px 0 10px;
+    }
   }
 }

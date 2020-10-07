@@ -11,9 +11,31 @@
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/style.min.css">
 
+	<!-- Google Tag Manager -->
+	<script>(function (w, d, s, l, i) {
+			w[l] = w[l] || [];
+			w[l].push({
+				'gtm.start':
+					new Date().getTime(), event: 'gtm.js'
+			});
+			var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+			j.async = true;
+			j.src =
+				'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+			f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-KPC273D');</script>
+	<!-- End Google Tag Manager -->
 </head>
 
 <body>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript>
+		<iframe src='https://www.googletagmanager.com/ns.html?id=GTM-KPC273D' height='0' width='0'
+			style='display:none;visibility:hidden'></iframe>
+	</noscript>
+	<!-- End Google Tag Manager (noscript) -->
+
 	<div class="wrapper">
 
 		<main class="page">
@@ -22,12 +44,13 @@
 			@@include('_partners.html')
 			@@include('_slider.html')
 			@@include('_payments.html')
-			<!-- @@include('_questions.html') -->
-			<!-- @@include('_revshare-reverse.html') -->
+			@@include('_questions.html')
+			@@include('_revshare-reverse.html')
 		</main>
 
-		<!-- @@include('_footer.html') -->
+		@@include('_footer.html')
 
+		@@include('_modals.html')
 
 		<script src="./js/libs.min.js"></script>
 		<script src="./js/script.min.js"></script>

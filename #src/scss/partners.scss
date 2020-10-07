@@ -7,7 +7,7 @@
     margin: 58px 0;
   }
   @media (max-width: 740px) {
-    margin: 62px 0;
+    margin: 62px 0 0;
   }
   // .partners__title
 
@@ -66,8 +66,8 @@
     @media (max-width: 1440px) {
       margin-bottom: 7px;
     }
-    @media (max-width: 740px) {
-
+    @media (max-width: 940px) {
+      justify-content: center;
     }
   }
 
@@ -148,8 +148,12 @@
     @media (max-width: 1440px) {
       font-size: 16px;
     }
+    @media (max-width: 940px) {
+      margin-left: 30px;
+    }
     @media (max-width: 740px) {
       font-size: 13.2155px;
+      margin-left: 0;
     }
   }
 }
