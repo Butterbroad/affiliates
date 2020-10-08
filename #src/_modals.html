@@ -10,41 +10,44 @@
           ПАРТНЕРСКОГО АККАУНТА MAXLINE
         </span>
       </div>
-      <form action="" class="modal__form form">
+      <form action="" id="reg-form" class="modal__form form">
         <div class="form__item form__item_mail">
-          <input class="form__item-input" type="text" placeholder="Почта">
+          <input class="form__item-input" id="email" type="text" placeholder="Почта">
           <label class="form__item-label" for="">Почта</label>
+          <small class="form__error">error message</small>
         </div>
         <div class="form__item form__item_pass">
-          <input class="form__item-input" type="password" placeholder="Пароль">
+          <div class="form__pass-show">
+            <img src="./img/modal/eye.svg" alt="">
+          </div>
+          <input class="form__item-input" id="password" type="password" placeholder="Пароль">
           <label class="form__item-label" for="">Пароль</label>
-          <div class="form__pass-show">
-            <img src="./img/modal/eye.svg" alt="">
-          </div>
+          <small class="form__error">error message</small>
         </div>
-        <div class="form__item form__item_pass form__item_pass-confirm">
-          <input class="form__item-input" type="password" placeholder="Подтверждение пароля">
-          <label class="form__item-label" for="">Подтверждение пароля</label>
+        <div class="form__item form__item_pass">
           <div class="form__pass-show">
             <img src="./img/modal/eye.svg" alt="">
           </div>
+          <input class="form__item-input" id="password2" type="password" placeholder="Подтверждение пароля">
+          <label class="form__item-label" for="">Подтверждение пароля</label>
+          <small class="form__error">error message</small>
         </div>
         <div class="form__item form__item_telegram">
-          <input class="form__item-input" type="text" placeholder="Telegram">
+          <input class="form__item-input" id="telegram" type="text" placeholder="Telegram">
           <label class="form__item-label" for="">Telegram</label>
         </div>
         <div class="form__item form__item_skype">
-          <input class="form__item-input" type="text" placeholder="Skype">
+          <input class="form__item-input" id="skype" type="text" placeholder="Skype">
           <label class="form__item-label" for="">Skype</label>
         </div>
         <div class="form__checkbox">
           <input type="checkbox" id="checkbox1">
-          <label for="checkbox1"></label>
+          <label class="form__checkbox-label form__checkbox-label_reg" for="checkbox1"></label>
           <div class="form__checkbox-text">
             Я подтверждаю своё совершеннолетие и соглашаюсь с <a href="#">правилами сайта.</a>
           </div>
         </div>
-        <button type="submit" class="form__btn btn" disabled>
+        <button type="submit" class="form__btn form__btn_reg btn">
           РЕГИСТРАЦИЯ
         </button>
       </form>
@@ -63,17 +66,19 @@
           В ПАРТНЕРСКий АККАУНТ MAXLINE
         </span>
       </div>
-      <form action="" class="modal__form form">
+      <form action="" id="enter-form" class="modal__form form">
         <div class="form__item form__item_mail">
-          <input class="form__item-input" type="text" placeholder="Почта">
+          <input class="form__item-input" id="email1" type="text" placeholder="Почта">
           <label class="form__item-label" for="">Почта</label>
+          <small class="form__error">error message</small>
         </div>
         <div class="form__item form__item_pass">
-          <input class="form__item-input" type="password" placeholder="Пароль">
-          <label class="form__item-label" for="">Пароль</label>
           <div class="form__pass-show">
             <img src="./img/modal/eye.svg" alt="">
           </div>
+          <input class="form__item-input" id="password3" type="password" placeholder="Пароль">
+          <label class="form__item-label" for="">Пароль</label>
+          <small class="form__error">error message</small>
         </div>
         <div class="form__checkbox">
           <input type="checkbox" id="checkbox2">
@@ -82,7 +87,7 @@
             Запомнить на сайте
           </div>
         </div>
-        <button type="submit" class="form__btn btn" disabled>
+        <button type="submit" class="form__btn form__btn_enter btn">
           Вход
         </button>
         <a href="" class="modal__pass-link">

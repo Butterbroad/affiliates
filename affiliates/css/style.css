@@ -107,6 +107,7 @@ li {
 button {
   cursor: pointer;
   border: none;
+  outline: transparent;
 }
 
 select::-ms-expand {
@@ -1578,11 +1579,39 @@ input:focus::placeholder {
   display: block;
 }
 
+.form__error {
+  position: absolute;
+  bottom: -12px;
+  left: 3px;
+  color: #CE0909;
+  font-size: 9px;
+  line-height: 12px;
+  display: none;
+}
+
 .form__pass-show {
   position: absolute;
   right: 0;
   bottom: 5px;
   cursor: pointer;
+}
+
+.form__pass-show::before {
+  content: '';
+  top: 9px;
+  left: 3px;
+  width: 16px;
+  height: 1px;
+  background-color: #c4c4c4;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  position: absolute;
+  display: none;
+}
+
+.form__pass-show.active::before {
+  display: block;
 }
 
 .form__item {
@@ -1596,7 +1625,6 @@ input:focus::placeholder {
           align-items: flex-end;
   min-height: 50px;
   margin-bottom: 13px;
-  position: relative;
   position: relative;
 }
 
@@ -1614,6 +1642,18 @@ input:focus::placeholder {
 
 .form__item:last-child {
   margin-bottom: 0;
+}
+
+.form__item.valid input {
+  border-bottom: 1px solid #0A9F30;
+}
+
+.form__item.error input {
+  border-bottom: 1px solid #CE0909;
+}
+
+.form__item.error > .form__error {
+  display: block;
 }
 
 .form__item-input {
@@ -1658,9 +1698,9 @@ input:focus::placeholder {
   left: 0;
   font-size: 12px;
   line-height: 12px;
-  -webkit-transition: all .6s ease;
-  -o-transition: all .6s ease;
-  transition: all .6s ease;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
   color: #818181;
   opacity: 0;
 }
@@ -1752,6 +1792,7 @@ input:focus::placeholder {
   height: 40px;
   font-size: 14px;
   margin: 0 auto;
+  outline: transparent;
 }
 
 .form__btn:disabled {

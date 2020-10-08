@@ -8,7 +8,7 @@ questionTrigger.forEach(item => {
 
 
 //modals
-const registrationBtn = document.querySelectorAll('.btn_reg');
+const registrationBtn = document.querySelectorAll('.btn_reg-open');
 registrationBtn.forEach(button => {
   button.addEventListener('click', () => {
     const modals = document.querySelector('.modals');
@@ -59,17 +59,18 @@ if (paramLinks.length > 0) {
 
 //show password
 const showPassword = document.querySelectorAll('.form__pass-show');
-const passwordInput = document.querySelectorAll('.form__item_pass > input');
 
 showPassword.forEach(button => {
   button.addEventListener('click', () => {
-    passwordInput.forEach(input => {
-      if (input.type === "password") {
-        input.type = "text";
-      } else {
-        input.type = "password";
-      }
-    });
+    button.classList.toggle('active');
+    buttonParent = button.parentElement;
+    passwordInput = buttonParent.querySelector('input');
+
+    if (passwordInput.type === "password") {
+      passwordInput.type = "text";
+    } else {
+      passwordInput.type = "password";
+    }
   });
 });
 
@@ -86,6 +87,9 @@ const slider = new Swiper(sliderContainer, {
   }
 });
 
+
+
+@@include('validate.js')
 
 @@include('webpSupport.js')
 
